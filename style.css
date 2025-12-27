@@ -1,100 +1,85 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #f3efe9;
-  color: #111;
-  line-height: 1.6;
+    background: linear-gradient(135deg, #ffffff, #191414);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 10%;
-  min-height: 100vh;
+.music-app {
+    background: #121212;
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-.hero-text h1 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-}
-
-.role {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-}
-
-.location {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 30px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero-img img {
-  width: 280px;
-  border-radius: 20px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 70px 10%;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.dark {
-  background: #111;
-  color: #fff;
-}
-
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  background: #222;
-  padding: 8px 15px;
-  border-radius: 20px;
-  margin: 5px;
-  font-size: 0.9rem;
-}
-
-/* PROJECTS */
-.project {
-  margin-bottom: 25px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+.player {
     text-align: center;
-  }
+}
 
-  .hero-img {
-    margin-top: 30px;
-  }
+.album-art {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.song-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.artist {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 5px;
+    background: #404040;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 30%;
+    height: 100%;
+    background: #1db954;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.controls .play {
+    font-size: 32px;
+    color: #1db954;
 }
